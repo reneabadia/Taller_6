@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        title= 'Mortal Craps'
+        link(rel='stylesheet', href='/styles/style.css')
+    body
+        div(class='flex')
+            h2(class='title-h2')="Roll Dice"
+            img(class='image' src='dice.gif' alt='dice')
+            form(class='formStyle' method='POST', action='/summary' , name='GameStatusMenu' )
+                div(class='flex')
+                    input(class='clase' type="text" , value=gameToMenu.id , name='idGame', required)
+                    input(class='button' type='submit' , value='Roll dice')

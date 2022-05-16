@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title= 'Mortal Craps'
+        link(rel='stylesheet', href='/styles/style.css')
+    body
+        div(class='flex')
+            h2(class='title-h2') Enter the player´s Bet
+            form(class='formStyle' method='POST', action='/roll' , name='GameStatus' )
+                div(class='flex')
+                    input(type="text" , placeholder='20', name='betOne', required)
+                    input(type="text" , placeholder='5', name='betTwo', required)
+                    input(type="text" , placeholder='15', name='betThree', required)
+                    input(class='button' type='submit' , value='Set bets')
+
+
+
+
+
+

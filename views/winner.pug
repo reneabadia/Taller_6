@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        title= 'Mortal Craps'
+        link(rel='stylesheet', href='/styles/style.css')
+    body
+        div(class='flex')
+            div(class='card')
+                h4(class='title-h4')="Player ID: " + winner._id
+                h2(class='title-h2')="Winner Name: " + winner.name
+                h2(class='title-h2')="Award: $" + amount
+            form(method='GET', action= '/' , name='Final' )
+                input(class='buttonRestart' type='submit' , value='Restart game')

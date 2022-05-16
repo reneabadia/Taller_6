@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title= 'Mortal Craps'
+        link(rel='stylesheet', href='/styles/style.css')
+    body
+        div(class='flex')
+            h2(class='title-h2') Input player names:
+            form(class='formStyle' method='POST', action= '/bets' , name='Players' )
+                div(class='flex')
+                    input(type="text" , placeholder='Julian Lasso', name= 'nameOne', required)
+                    input(type="text" , placeholder='Rene Abadia',  name= 'nameTwo', required)
+                    input(type="text" , placeholder='Raul Alzate',  name= 'nameThree', required)
+                    input(class='button' type='submit' , value='Create players')

@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title= 'Mortal Craps'
+        link(rel='stylesheet', href='/styles/style.css')
+    body
+        div(class='flex')
+            h4(class='title-h4')='Game ID: ' + object.id
+            div(class='card')
+                h3(class='title-h3')='Summary: '
+                h3(class='title-h3')=object.gamers[0].name + " - Bet: $" + object.gamers[0].bet
+                h3(class='title-h3')=object.gamers[1].name + " - Bet: $" + object.gamers[1].bet
+                h3(class='title-h3')=object.gamers[2].name + " - Bet: $" + object.gamers[2].bet
+
+                form(method='GET', action= '/winner' , name='GameStatus' )
+                    input(class='button' type='submit' , value='Get Winner !')
